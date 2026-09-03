@@ -28,35 +28,3 @@ def calculate_factorial():
 
 calculate_factorial()
 
-n_str = input("Enter the number of terms: ")
-try:
-    n = int(n_str)
-
-    if n <= 0:
-        print("Please enter a positive integer.")
-    else:
-        first = 0
-        second = 1
-Atharav
-        print("Fibonacci Series:", end=" ")
-
-        for i in range(n):
-            print(first, end=" ")
-            next_term = first + second
-            first = second
-            second = next_term
-        print()
-except ValueError:
-    print("Invalid input. Please enter an integer.")
-
-class Student:
-    def __init__(self, name, roll_no, marks):
-        self.name = name
-        self.roll_no = roll_no
-        self.marks = marks
-
-s = Student("Rahul", 4, 87.9)
-
-print(f"Name: {s.name}")
-print(f"Roll No: {s.roll_no}")
-print(f"Marks: {s.marks:.1f}")
